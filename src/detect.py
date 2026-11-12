@@ -79,3 +79,21 @@ if ip_plus_active:
     print(f"IP la plus active : {ip} ({nombre} échecs)")
 else:
     print("Aucune tentative échouée enregistrée.")
+
+# Générer un rapport de sécurité dans un fichier
+fichier_rapport = projet / "logs" / "rapport_soc.txt"
+
+with open(fichier_rapport, "w", encoding="utf-8") as rapport:
+    rapport.write("=== RAPPORT DE SECURITE SOC ===\n")
+    rapport.write(f"Date de l'analyse : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    rapport.write(f"Total des échecs SSH : {total_echecs}\n")
+    rapport.write(f"Nombre d'IP distinctes : {nombre_ip_distinctes}\n")
+    rapport.write(f"Nombre d'IP en alerte : {nombre_ip_en_alerte}\n")
+
+    if ip_plus_active:
+        ip, nombre = ip_plus_active[0]
+        rapport.write(f"IP la plus active : {ip} ({nombre} échecs)\n")
+    else:
+        rapport.write("Aucune tentative échouée enregistrée.\n")
+
+print(f"\nRapport de sécurité généré : {fichier_rapport}")

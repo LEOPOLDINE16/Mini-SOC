@@ -1,0 +1,6 @@
+=== RAPPORT DE SECURITE SOC ===
+Date de l'analyse : 2026-11-12 13:25:31
+Total des échecs SSH : 8
+Nombre d'IP distinctes : 3
+Nombre d'IP en alerte : 1
+IP la plus active : 192.168.1.50 (5 échecs)
