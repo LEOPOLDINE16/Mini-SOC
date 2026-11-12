@@ -1,0 +1,10 @@
+# Fichiers d'alertes générés par le programme
+logs/alerts.log
+
+# Fichiers Python temporaires
+__pycache__/
+*.pyc
+
+# Environnements virtuels Python
+venv/
+.venv/

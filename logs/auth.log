@@ -1,0 +1,9 @@
+Nov 12 10:15:01 ubuntu sshd[1234]: Failed password for invalid user admin from 192.168.1.50 port 45210 ssh2
+Nov 12 10:15:03 ubuntu sshd[1235]: Failed password for invalid user admin from 192.168.1.50 port 45211 ssh2
+Nov 12 10:15:05 ubuntu sshd[1236]: Failed password for invalid user root from 192.168.1.50 port 45212 ssh2
+Nov 12 10:15:07 ubuntu sshd[1237]: Failed password for invalid user test from 192.168.1.50 port 45213 ssh2
+Nov 12 10:15:09 ubuntu sshd[1238]: Failed password for invalid user admin from 192.168.1.50 port 45214 ssh2
+Nov 12 10:16:20 ubuntu sshd[1239]: Accepted password for leopoldine from 192.168.1.20 port 45220 ssh2
+Nov 12 10:17:01 ubuntu sshd[1240]: Failed password for invalid user guest from 192.168.1.60 port 45230 ssh2
+Nov 12 10:17:03 ubuntu sshd[1241]: Failed password for invalid user guest from 192.168.1.60 port 45231 ssh2
+Nov 12 10:18:01 ubuntu sshd[1242]: Failed password for invalid user root from 10.0.0.15 port 45300 ssh2
