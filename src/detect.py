@@ -57,3 +57,25 @@ if not alerte_detectee:
     print("Aucune activité suspecte détectée.")
 
 print("\n=== Fin de l'analyse ===")
+
+# Générer un rapport statistique
+print("\n=== Rapport statistique SOC ===")
+
+total_echecs = sum(tentatives_par_ip.values())
+nombre_ip_distinctes = len(tentatives_par_ip)
+nombre_ip_en_alerte = sum(
+    1 for nombre in tentatives_par_ip.values()
+    if nombre >= SEUIL
+)
+
+print(f"Total des échecs SSH : {total_echecs}")
+print(f"Nombre d'IP distinctes : {nombre_ip_distinctes}")
+print(f"Nombre d'IP en alerte : {nombre_ip_en_alerte}")
+
+ip_plus_active = tentatives_par_ip.most_common(1)
+
+if ip_plus_active:
+    ip, nombre = ip_plus_active[0]
+    print(f"IP la plus active : {ip} ({nombre} échecs)")
+else:
+    print("Aucune tentative échouée enregistrée.")
